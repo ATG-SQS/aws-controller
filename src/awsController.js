@@ -15,15 +15,15 @@ app.get('/', function (req, res) {
 res.send('Service Available');
 });
 
-app.get('/config/setAccessKey/:text', function(req, rsp){
-    "use strict";
-    AWS.config.update({accessKeyId: req.params.text})
-});
+//app.get('/config/setAccessKey/:text', function(req, rsp){
+//    "use strict";
+//    AWS.config.update({accessKeyId: req.params.text})
+//});
 
-app.get('config/setSecretKey/:text', function(req, rsp) {
-    "use strict";
-    AWS.config.update({secretAccessKey: req.params.text})
-});
+//app.get('config/setSecretKey/:text', function(req, rsp) {
+ //   "use strict";
+//    AWS.config.update({secretAccessKey: req.params.text})
+//});
 
 app.get('/createECSInstance', function(req, rsp){
     "use strict";
