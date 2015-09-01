@@ -12,7 +12,7 @@ http.createServer(app).listen(5000, function(){
 });
 
 app.get('/', function (req, res) {
-res.send('Hello WORd/n');
+res.send('WORD/n');
 });
 
 
