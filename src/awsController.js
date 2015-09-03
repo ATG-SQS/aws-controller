@@ -4,8 +4,6 @@ var express = require('express')
 var app = express();
 
 var AWS = require('aws-sdk')
-//AWS.config.update({accessKeyId: 'AKIAIQZNAE6PBV6RJESQ', secretAccessKey: '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', region: 'us-west-2'})
-
 
 http.createServer(app).listen(5000, function(){
     console.log('Express server listening on port ' + 5000);
@@ -14,16 +12,6 @@ http.createServer(app).listen(5000, function(){
 app.get('/', function (req, res) {
 res.send('Service Available');
 });
-
-//app.get('/config/setAccessKey/:text', function(req, rsp){
-//    "use strict";
-//    AWS.config.update({accessKeyId: req.params.text})
-//});
-
-//app.get('config/setSecretKey/:text', function(req, rsp) {
- //   "use strict";
-//    AWS.config.update({secretAccessKey: req.params.text})
-//});
 
 app.get('/createECSInstance', function(req, rsp){
     "use strict";
