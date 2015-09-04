@@ -10,7 +10,7 @@ http.createServer(app).listen(5000, function(){
 });
 
 app.get('/', function (req, res) {
-res.send('Service Available!');
+res.send('Service Available! :)');
 });
 
 app.get('/createECSInstance', function(req, rsp){
