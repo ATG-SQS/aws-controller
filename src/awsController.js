@@ -13,7 +13,7 @@ app.get('/', function (req, res) {
 res.send('Service Available!');
 });
 
-app.get('/createECSInstance', function(req, rsp){
+/*app.get('/createECSInstance', function(req, rsp){
     "use strict";
 
     var ec2 = new AWS.EC2();
@@ -31,7 +31,7 @@ app.get('/createECSInstance', function(req, rsp){
         var instanceID = data.Instances[0].InstanceID;
         rsp.send("Created instance", instanceID );
 
-        });
+        });*/
 
 });
 
